@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ToolsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tools</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row *ngIf="homeshow">
+      <ion-col col-4 (click)="IEThomeshow=!IEThomeshow; homeshow=false">
+        <div class="center card"></div>
+        <div class="center caption" >Income & Expense</div>
+      </ion-col>
+      <ion-col col-4 center>
+        <div class="center card"></div>
+        <div class="center caption">E-Sign</div>
+      </ion-col>
+      <ion-col col-4>
+        <div class="center card"></div>
+        <div class="center caption">PDF Converter</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid *ngIf="IEThomeshow">
+    <ion-row></ion-row>
+    <ion-row>
+      <ion-col col-12 class="hometext">
+        <p>Keep track of all your income and
+            expenses here by dropping
+            receipts or invoice files and
+            inputting relevant information.
+            You can even collaborate with
+            your colleagues and accountant.
+            Everything that happens here is
+            also synced to your mobile app.</p> 
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-icon name="paper" class="paper center">
+            
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 class="hometext">
+        <p>You currently do not have
+            any organizations associated
+            with this account. You
+            may add one by clicking the + icon.</p>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

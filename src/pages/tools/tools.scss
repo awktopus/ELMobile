@@ -1,0 +1,32 @@
+page-tools {
+
+.center {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.card {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: color($colors, primary);
+}
+
+.caption {
+    padding: 15px;
+}
+
+.paper {
+    font-size: 120px;
+}
+
+.hometext {
+    font-size: 18px;
+    padding: 10px;
+}
+
+}

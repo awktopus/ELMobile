@@ -1,0 +1,27 @@
+ion-icon {
+    &[class*="custom-"] {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        $sz: 20px;
+        width: $sz;
+        height: $sz;
+    } // custom icons
+    &[class*="megaphone"] {
+        background: url("../assets/icon/megaphone.png") no-repeat 50% 50%;
+        background-size: contain;
+        filter: invert(47%) sepia(0%) saturate(1321%) hue-rotate(261deg) brightness(92%) contrast(80%);
+    }
+    
+    &[class*="contact"] {
+        background: url("../assets/icon/contact.svg") no-repeat 50% 50%;
+        background-size: contain;
+        filter: invert(47%) sepia(0%) saturate(1321%) hue-rotate(261deg) brightness(92%) contrast(80%);
+    }
+
+    &[class*="chat"] {
+        background: url("../assets/icon/chat.svg") no-repeat 50% 50%;
+        background-size: contain;
+        filter: invert(47%) sepia(0%) saturate(1321%) hue-rotate(261deg) brightness(92%) contrast(80%);
+    }
+
+}
