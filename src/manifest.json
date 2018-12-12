@@ -9,5 +9,6 @@
     "type": "image/png"
   }],
   "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "theme_color": "#4e8ef7",
+  "content_security_policy": "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self'"
 }
