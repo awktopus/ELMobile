@@ -2,7 +2,7 @@
   "name": "IET",
   "version": "0.0.1",
   "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "homepage": "https://awktopus.github.io/ELMobile/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
