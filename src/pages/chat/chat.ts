@@ -16,12 +16,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'chat.html',
 })
 export class ChatPage {
+  showeveryone = true;
+  showlater=false;
+  showstarred=false;
   people = [
-    {name: 'Susan Li', message: "I just sent the PDF and message to the", time: "3:49PM", status: "unread"},
-    {name: 'Charles Yi', message: "When you have time can you check this", time: "2:17PM", status: "unread"},
-    {name: 'DuKe Du', message: "Ni shang zhe ge wang zhan shi shi wo z", time: "11:53PM", status: "read"},
-    {name: 'Qew Bacca', message: "Hey Tracy!!!! I'll be coming into the office!", time: "8:33PM", status: "read"}
+    {name: 'Susan Li', message: "I just sent the PDF and message", time: "3:49PM", read: false, later: false, starred: false},
+    {name: 'Charles Yi', message: "When you have time can you ch", time: "2:17PM", read: false, later: false, starred: false},
+    {name: 'DuKe Du', message: "Ni shang zhe ge wang zhan shi s", time: "9:06AM", read: false, later: false, starred: false},
+    {name: 'Qew Bacca', message: "Hey Tracy! I'll be coming into the ", time: "8:33PM", read: false, later: false, starred: false},
   ]
+
+  toggleStatus(person) {
+    person.read =! person.read
+  }
+  toggleStar(person) {
+    person.starred =! person.starred
+  }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
